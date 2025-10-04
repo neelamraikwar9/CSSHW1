@@ -1,116 +1,105 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Blog Page</title>
-        <style>
 
-            :root {
-                --primary-color: gray;
-            }
+<head>
+    <title>Blog Page</title>
+    <style>
+        :root {
+            --primary-color: gray;
+        }
 
-            .big-container {
-                box-sizing: border-box;
-                /**background-color: aqua;**/
-                padding: 3rem 2rem;
-               
-            }
+        .big-container {
+            box-sizing: border-box;
+            padding: 3rem 2rem;
+        }
 
-            
-            .text-container {
-              /**background-color: gray;**/
-              /**padding:0.5rem; **/
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              margin-bottom: 2rem;
-            }
 
-            .title {
-              color: white; 
-            }
-            
+        .text-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
 
-            .container {
+        .title {
+            color: white;
+        }
+
+
+        .container {
             display: flex;
             justify-content: center;
             align-items: between;
-            background-color: var(--primary-color); 
+            background-color: var(--primary-color);
             color: white;
             border: 1px solid green;
             padding: 0.5rem;
             margin-bottom: 2rem;
-            }
+        }
 
-            .list-item-inline {
-                display: inline;
-            }
+        .list-item-inline {
+            display: inline;
+        }
 
-            .link {
-                text-decoration: none;
-                color: white;
-                padding: 100px; 
-                
-            }
+        .link {
+            text-decoration: none;
+            color: white;
+            padding: 100px;
+        }
 
-            .link-active {
-                text-decoration:solid;
-            }
-            
-            /** .centered-container {
-                max-width: 800px;
-            } **/
+        .link-active {
+            text-decoration: solid;
+        }
 
-            .postContainer {
-                border: 1px solid var(--primary-color); 
-                display: flex;
-                justify-content: center;
-                margin-bottom: 2rem;
-                padding: 0.5rem;
-            }
+        .postContainer {
+            border: 1px solid var(--primary-color);
+            display: flex;
+            justify-content: center;
+            margin-bottom: 2rem;
+            padding: 0.5rem;
+        }
 
-            .postPreviewContainer {
-                border: 1px solid var(--primary-color);
-                padding-left: 1rem;
-                margin-bottom: 2rem;
-            }
+        .postPreviewContainer {
+            border: 1px solid var(--primary-color);
+            padding-left: 1rem;
+            margin-bottom: 2rem;
+        }
 
-            .postsContainer {
-                border: 1px solid var(--primary-color);
-                margin-bottom: 2rem;
-            }
+        .postsContainer {
+            border: 1px solid var(--primary-color);
+            margin-bottom: 2rem;
+        }
 
-            .list-non-bullet {
-                list-style: none;
-            }
+        .list-non-bullet {
+            list-style: none;
+        }
 
-            .footerContainer {
-                padding: 1rem;
-                background-color: var(--primary-color);
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
+        .footerContainer {
+            padding: 1rem;
+            background-color: var(--primary-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-            a:hover {
-                text-decoration: underline;
-                color:white;
-            } 
+        a:hover {
+            text-decoration: underline;
+            color: white;
+        }
 
-            .footerContainer .a:hover {
-                text-decoration: underline !important;
-                color:white !important;
-            }
-  
+        .footerContainer .a:hover {
+            text-decoration: underline !important;
+            color: white !important;
+        }
+    </style>
+</head>
 
+<body>
+    <div class="big-container">
+        <div class="container text-container">
+            <h1 class="title">BLOG TITLE</h1>
+        </div>
 
-        </style>
-    </head>
-    <body>
-        <div class="big-container">
-            <div class="container text-container">
-                <h1 class="title">BLOG TITLE</h1>
-            </div>
-        
         <nav class="container">
             <ul>
                 <li class="list-item-inline"><a class="link link-active" href="/">Home</a></li>
@@ -118,7 +107,7 @@
                 <li class="list-item-inline"><a class="link link-active" href="/">About</a></li>
             </ul>
         </nav>
-        
+
 
         <div class="postContainer">
             <h1>Blog Post Title</h1>
@@ -131,23 +120,25 @@
         <div class="postsContainer">
             <ul style="padding: 2rem 0rem; padding-left: 2rem; list-style: none">
                 <li>Post 1</li>
-                <hr/>
+                <hr />
                 <li>Post 2</li>
-                <hr/>
+                <hr />
                 <li>Post 3</li>
-                <hr/>
+                <hr />
             </ul>
         </div>
 
 
         <footer class="footerContainer">
             <ul style="list-style: none">
-                <li style="display: inline; padding: 3rem;"><a href="/contact" class="a" style="color:white; text-decoration:none;">Contact</a></li>
-                <li style="display: inline; padding: 3rem;"><a href="/privacy" class="a" style="color:white; text-decoration:none;">Privacy Policy</a></li>
+                <li style="display: inline; padding: 3rem;"><a href="/contact" class="a"
+                        style="color:white; text-decoration:none;">Contact</a></li>
+                <li style="display: inline; padding: 3rem;"><a href="/privacy" class="a"
+                        style="color:white; text-decoration:none;">Privacy Policy</a></li>
             </ul>
         </footer>
-       
-        </div>
-    </body>
-</html>
 
+    </div>
+</body>
+
+</html>
